@@ -4,7 +4,7 @@
 ## Материалы
  [Официальная страница OpenSSL](https://www.openssl.org/)
  
- Руководство по OpenSSL (https://www.openssl.org/docs/manmaster/) 
+ [Руководство по OpenSSL](https://www.openssl.org/docs/manmaster/) 
  
  [Учебник по OpenSSL](https://linuxhint.com/openssl_command/) 
  ## Задание
