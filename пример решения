@@ -1,0 +1,51 @@
+# Решение задачи на выполнение
+## Шаги
+### Создаем скрипт bash
+
+```bash
+#!/bin/bash
+
+# Проверка наличия OpenSSL
+if ! command -v openssl &> /dev/null; then
+  echo "Error: OpenSSL is not installed."
+  exit 1
+fi
+
+# Запрос пути к файлу
+read -p "Введите путь к файлу: " input_file
+
+# Проверка существования файла
+if [ ! -f "$input_file" ]; then
+  echo "Error: File '$input_file' does not exist or is not accessible."
+  exit 1
+fi
+
+# Запрос пароля
+read -s -p "Введите пароль: " password
+echo "" # Добавляем пустую строку для лучшей читаемости
+
+# Шифрование файла с помощью OpenSSL
+output_file="${input_file}.enc"
+openssl aes-256-cbc -salt -in "$input_file" -out "$output_file" -pass pass:"$password" || {
+  echo "Error: Encryption failed."
+  exit 1
+}
+
+# Успешное сообщение
+echo "Файл '$input_file' зашифрован. Создан файл '$output_file'."
+
+# Запрос на удаление исходного файла
+read -p "Хотите удалить исходный файл? (y/n): " delete_file
+if [[ "$delete_file" == "y" ]]; then
+  rm "$input_file" || {
+    echo "Warning: Could not delete '$input_file'."
+  }
+fi
+
+exit 0
+```
+### Сохраняем скрипт в файл: `encrypt.bash`
+### Делаем скрипт исполняемым: 
+`chmod +x encrypt.bash`
+### Запускаем скрипт
+`./encrypt.bash`
