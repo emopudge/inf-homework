@@ -40,6 +40,7 @@
 cat secret.enc
 ```
 Например, мой выглядит вот так:
+
 ![image](https://github.com/user-attachments/assets/98c844be-b65f-47f3-9b4f-17f62d84714c)
 
 4. Расшифрование. Выполняем команду
