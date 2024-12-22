@@ -8,7 +8,7 @@
  
  [Учебник по OpenSSL](https://linuxhint.com/openssl_command/) 
  ## Задание
- Зашифровать файл `secret.txt` с помощью алгоритма [AES-256](https://baofeng.ru/blog/What-is-AES-256-encryption/) в [CBC режиме](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B6%D0%B8%D0%BC_%D1%81%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2_%D1%88%D0%B8%D1%84%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0#:~:text=Cipher%20Block%20Chaining%2C%20CBC)%20%E2%80%94,XOR)%20%D1%81%20%D0%BF%D1%80%D0%B5%D0%B4%D1%8B%D0%B4%D1%83%D1%89%D0%B8%D0%BC%20%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%BE%D0%BC%20%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.), используя пароль, и затем расшифровать его.
+ Зашифровать файл `secret.txt` с помощью алгоритма [AES-256](https://baofeng.ru/blog/What-is-AES-256-encryption/) в [CBC режиме](https://ru.wikipedia.org/w/index.php?title=%D0%A0%D0%B5%D0%B6%D0%B8%D0%BC_%D1%81%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2_%D1%88%D0%B8%D1%84%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0&stable=1), используя пароль, и затем расшифровать его.
  ### Шаги
  Создаем файл `secret.txt` с конфиденциальной информацией (например, ваш любимый анекдот про басистов)
  Выполняем команду
